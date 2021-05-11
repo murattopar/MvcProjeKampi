@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
     }
     public void AddCategory(Category p)
     {
-      if (p.CategoryName == "" || p.CategoryName.Length <= 3 || p.CategoryDescription == "" || p.CategoryName.Length >= 51)
+      if (p.CategoryName == "" || p.CategoryName.Length <= 3 || p.CategoryDescription == "" || p.CategoryName.Length > 50)
       {
         // hata mesajı
       }
